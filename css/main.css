@@ -1,0 +1,22 @@
+html {
+
+}
+
+body {
+
+}
+
+#header-container img{
+  width: 100%;
+  height: auto;
+  border: 2.5px solid black;
+  border-radius: 5px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.nav-left {
+  float: left;
+}
