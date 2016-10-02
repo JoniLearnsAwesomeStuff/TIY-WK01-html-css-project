@@ -6,7 +6,8 @@
 
 header .img1 {
   border: 5px solid rebeccapurple;
-  border-radius: 0 15% 0 15% / 50%;
+  /*border-radius: 0 15% 0 15% / 50%;*/
+  border-radius: 1.5em;
   position: relative;
   width: calc(100% - 5px);
   height: auto;
