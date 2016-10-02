@@ -54,9 +54,9 @@ body {
 ***********************/
 .div--left,
 .div--right {
-  border: 2.5px solid rebeccapurple;
+  /*border: 2.5px solid rebeccapurple;*/
   /*border-radius: 0 5em 0 5em;*/
-  border-radius: 1em;
+  /*border-radius: 1em;*/
   background-color: #f2ecf9;
   display: inline;
   min-height: 100%;
@@ -87,17 +87,21 @@ body {
 .div--right {
   float: right;
   right: 0;
-  /*width: calc(100% - 36% - 10%);*/
+  width: calc(100% - 36% - 10%);
 }
 
 .div--info {
   border-top: 1px solid rebeccapurple;
+  padding-top: 0;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-bottom: 2em;
 }
 
 .div--hours {
   float: left;
-  width: 35%;
-  padding: 0 .75em 1em 2em;
+  width: 30%;
+  /*padding: 0 .75em 1em 2em;*/
   /*padding: 1em;*/
   /*margin: 1em;*/
 }
@@ -105,13 +109,13 @@ body {
 .div--contact {
   float: left;
   width: 35%;
-  padding: 0 .75em 1em .75em;
+  /*padding: 0 .75em 1em .75em;*/
 }
 
 .div--social {
   float: right;
-  width: 18%;
-  padding: 0 1em 1em .75em;
+  width: 20%;
+  /*padding: 0 1em 1em .75em;*/
 }
 
 .img--social {
@@ -147,8 +151,7 @@ body {
   bottom: 0;
   width: 100%;
   border: 5px solid rebeccapurple;
-  /*border-radius: 0 5em 0 5em;*/
-  border-radius: 1em;
+  border-radius: 0 1em 0 1em;
   background-color: #f2ecf9;
   color: rebeccapurple;
   padding-bottom: 0.2rem;
