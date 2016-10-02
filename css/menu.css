@@ -1,8 +1,5 @@
 .div--menu {
-  border: 2px solid rebeccapurple;
-  border-radius: 0 5em 0 5em;
-  background-color: #f2ecf9;
-  width: 80%;
+  width: 100%;
   padding: 1em;
   margin: 1em;
   table-layout: auto;

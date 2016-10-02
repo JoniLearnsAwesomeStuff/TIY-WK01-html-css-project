@@ -1,11 +1,11 @@
-#banner {
+/*#banner {
   border: 2px double black;
   border-radius: 0 15% 0 0 / 37%;
   background: rebeccapurple;
-}
+}*/
 
 header .img1 {
-  border: 3px solid rebeccapurple;
+  border: 5px solid rebeccapurple;
   border-radius: 0 15% 0 15% / 50%;
   position: relative;
   width: calc(100% - 5px);
@@ -16,10 +16,11 @@ header .img1 {
 header .h1--banner {
   position: absolute;
   font-family: 'Arima Madurai', cursive;
+  color: rebeccapurple;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  top: 75px;
+  top: 70px;
   width: 100%;
   z-index: 1;
 }
@@ -30,14 +31,19 @@ header .img2 {
   position: relative;
   width: 10rem;
   height: 10rem;
-  top: -5rem;
-  left: 5rem;
+  top: -6rem;
+  left: 8.5rem;
   z-index: 2;
 }
 
 .h1--title {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-style: italic;
   font-variant: small-caps;
+  color: rebeccapurple;
   text-align: center;
-  margin-top: -9rem;
+  margin-top: -10rem;
   margin-bottom: 2.5rem;
 }
