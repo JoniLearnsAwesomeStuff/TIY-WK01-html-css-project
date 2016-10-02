@@ -1,0 +1,62 @@
+.div--menu {
+  border: 2px solid rebeccapurple;
+  border-radius: 0 5em 0 5em;
+  background-color: #f2ecf9;
+  width: 80%;
+  padding: 1em;
+  margin: 1em;
+  table-layout: auto;
+}
+
+.th--flavor {
+  width: 50%;
+}
+
+.th--calories {
+  width: 30%;
+}
+
+.th--sugar {
+  width: 20%;
+}
+
+.menu:after {
+  clear: both;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  padding: 1em;
+  margin: 1em;
+}
+
+th {
+  text-align: left;
+  background-color: rebeccapurple;
+  color: #f2ecf9;
+}
+
+tr:nth-child(even) td {
+  background-color: pink;
+}
+
+tr:nth-child(odd) td {
+  background-color: skyblue;
+}
+
+tr:hover td{
+  background-color: aqua;
+}
+
+/*This isn't working!*/
+tr:focus td,
+tr:target td,
+tr:active td {
+  background-color: darkorange;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: .5em;
+}

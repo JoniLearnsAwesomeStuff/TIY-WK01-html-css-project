@@ -1,74 +1,119 @@
 html {
-
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 body {
-  margin: .5rem;
+  /********************************************
+      Background pattern for all pages.
+      Borrowed with gratitude from Lea Verou's CSS Pattern Gallery
+      http://lea.verou.me/css3patterns/# *********************************************/
+  background:
+  /*radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+  linear-gradient(45deg, #8b1a89 0%, #551a8b 20%, #551a8b 40%, #551a8b 60%, #551a8b 75%, #1d1a8b 100%);
+  background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;*/
+  background-color: #f2ecf9;
+  background-color: rebeccapurple;
+
+
+  padding: 1.5rem;
+
+  margin: 0;
+
+  min-height: 100%;
 }
 
-#banner {
+.clear {
+  clear: both;
+}
+
+/*.main--content {
   border: 2px double black;
-  background: rebeccapurple;
-}
-
-header .img1 {
-  border: 3px solid rebeccapurple;
-  border-radius: 15% 0 15% 0 / 50%;
-  position: relative;
-  width: calc(100% - 5px);
-  height: auto;
-  z-index: 1;
-}
-
-header .h1--banner {
-  position: absolute;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  top: 75px;
-  width: 100%;
-  z-index: 1;
-}
-
-header .img2 {
-  border: 5px solid rebeccapurple;
-  border-radius: 50%;
-  position: relative;
-  width: 10rem;
-  height: 10rem;
-  top: -5rem;
-  left: 5rem;
-  z-index: 2;
-}
-
-.h1--title {
-  font-variant: small-caps;
-  text-align: center;
-  margin-top: -9rem;
-}
-
-main {
   width: 100%;
   height: 100%;
-  background: pink;
+  background: #eee;
+}*/
+/**********************
+* Both sides Content
+***********************/
+.div--left,
+.div--right {
+  height: 100%;
+  /*padding: 1em;*/
 }
 
-main div {
+.div--container {
+  border: 2px solid rebeccapurple;
+  border-radius: 0 5em 0 5em;
+  background-color: #f2ecf9;
+  width: 80%;
+  padding: 1em;
+  margin: 1em;
+}
+
+/**********************
+* Left side Content
+***********************/
+.div--left {
+  float: left;
+  border: 3px solid rebeccapurple;
+  background-color: rebeccapurple;
+  width: 36%;
+  /*border-right: 1px solid black;
+  padding-right: 2em;*/
+}
+
+.div--welcome {
+  width: 80%;
+  padding: 1em;
+  margin: 1em;
+}
+
+.div--welcome h2 {
+  text-align: center;
+}
+
+/**********************
+* Right side Content
+***********************/
+.div--right {
+  float: right;
+  border: 3px solid rebeccapurple;
+  background-color: rebeccapurple;
+  /*width: calc(100% - 36% - 10%);*/
+}
+
+.div--information {
+  padding: 1em;
+  margin: 1em;
+}
+
+.div--hours {
   float: left;
 }
 
-.left {
-  width: 27.5%;
-  background: red;
+.div--contact {
+  float: right;
 }
 
-.center {
-  width: calc(100% - calc(27.5% * 2));
-  background: yellow;
+.div--hours,
+.div--contact {
+  width: 45%;
+  border: 1px solid black;
 }
 
-.right {
-  width: 27.5%;
-  background: blue;
+
+
+.div--hours h2,
+.div--contact h2,
+.div--hours p,
+.div--contact p {
+  text-align: center;
 }
