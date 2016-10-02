@@ -44,33 +44,76 @@ body {
   clear: both;
 }
 
+/*************************************
+* Wrapper Container
+* (for left & right side containers)
+**************************************/
 .main--content {
   margin 0 auto;
-  padding-bottom: 1em;
+  overflow: hidden;
 }
 
 /**********************
-* Both sides Content
+* Left side Container
 ***********************/
 .div--left,
+.div--left:before {
+  width: 36%;
+}
+
+.div--left {
+  float: left;
+}
+
+.div--left:before {
+  content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+    background-color: #f2ecf9;
+}
+
+/**********************
+* Right side Container
+***********************/
+.div--right,
+.div--right::before {
+  width: calc(100% - 36% - 10%);
+}
+
 .div--right {
-  /*border: 2.5px solid rebeccapurple;*/
-  /*border-radius: 0 5em 0 5em;*/
-  /*border-radius: 1em;*/
+  float: right;
+}
+
+.div--right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  left: 40%;
   background-color: #f2ecf9;
-  display: inline;
-  min-height: 100%;
+}
+
+/*************************************
+* Footer Container
+**************************************/
+.footer--mod {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border: 5px solid rebeccapurple;
+  border-radius: 0 1em 0 1em;
+  background-color: #f2ecf9;
+  color: rebeccapurple;
+  padding-bottom: 0.2rem;
 }
 
 /**********************
 * Left side Content
 ***********************/
-.div--left {
-  float: left;
-  width: 36%;
-  left: 0;
-}
-
 .div--welcome {
   width: 90%;
   padding: 1em .75em 1em .75em;
@@ -84,38 +127,26 @@ body {
 /**********************
 * Right side Content
 ***********************/
-.div--right {
-  float: right;
-  right: 0;
-  width: calc(100% - 36% - 10%);
-}
-
 .div--info {
-  border-top: 1px solid rebeccapurple;
+  /*border-top: 1px solid rebeccapurple;*/
   padding-top: 0;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-bottom: 2em;
+  padding-left: .75em;
+  padding-right: .75em;
 }
 
 .div--hours {
   float: left;
   width: 30%;
-  /*padding: 0 .75em 1em 2em;*/
-  /*padding: 1em;*/
-  /*margin: 1em;*/
 }
 
 .div--contact {
   float: left;
   width: 35%;
-  /*padding: 0 .75em 1em .75em;*/
 }
 
 .div--social {
   float: right;
   width: 20%;
-  /*padding: 0 1em 1em .75em;*/
 }
 
 .img--social {
@@ -137,26 +168,15 @@ body {
   margin: 0 1em 1.5em 1em;
 }
 
-/*.div--hours h2,
-.div--contact h2,
-.div--social h2,*/
 .div--hours p,
 .div--contact p,
 .div--social p {
   text-align: center;
 }
 
-.footer--mod {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  border: 5px solid rebeccapurple;
-  border-radius: 0 1em 0 1em;
-  background-color: #f2ecf9;
-  color: rebeccapurple;
-  padding-bottom: 0.2rem;
-}
-
+/**********************
+* Footer Content
+***********************/
 .footer--mod p {
   margin: 1rem auto;
   text-align: center;

@@ -5,53 +5,61 @@
   table-layout: auto;
 }
 
-.th--flavor {
-  width: 50%;
-}
-
-.th--calories {
-  width: 30%;
-}
-
-.th--sugar {
-  width: 20%;
-}
-
 .menu:after {
   clear: both;
 }
 
-table {
-  border-collapse: collapse;
-  width: 90%;
+.table {
+  display:table;
+  width: 100%;
+  border: 1px solid black;
 }
 
-th {
-  text-align: left;
+.table-row {
+  display:table-row;
+}
+
+.table-cell {
+  display:table-cell;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px;
+}
+
+.header {
   background-color: rebeccapurple;
   color: #f2ecf9;
 }
 
-tr:nth-child(even) td {
+.flavor {
+  width: 50%;
+}
+
+.calories {
+  width: 25%;
+}
+
+.sugar {
+  width: 25%;
+}
+
+a.table-row {
+  text-decoration:none;
+}
+
+a.table-row:nth-child(even) {
   background-color: pink;
 }
 
-tr:nth-child(odd) td {
+a.table-row:nth-child(odd) {
   background-color: skyblue;
 }
 
-tr:hover td{
+a.table-row:hover {
   background-color: aqua;
 }
 
-/*This isn't working!*/
-tr:focus td,
-tr:target td,
-tr:active td {
+a.table-row:focus,
+a.table-row:active {
   background-color: darkorange;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: .5em;
 }
