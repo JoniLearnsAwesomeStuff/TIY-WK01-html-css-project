@@ -5,12 +5,11 @@
 }*/
 
 header .img1 {
-  border: 5px solid rebeccapurple;
+  /*border: 1px solid rebeccapurple;*/
   border-radius: 0 1.5em 0 1.5em;
   /*border-radius: 1.5em;*/
   position: relative;
   width: 100%;
-  right: 0
   height: auto;
   z-index: 1;
 }
@@ -18,23 +17,27 @@ header .img1 {
 header .h1--banner {
   position: absolute;
   font-family: 'Arima Madurai', cursive;
-  color: rebeccapurple;
-  font-size: 1.75rem;
-  font-weight: 700;
+  color: #f2ecf9;
+  font-size: 3vw;
+  font-weight: bolder;
   text-align: center;
-  top: 70px;
+  top: 4em;
   width: 100%;
   z-index: 1;
 }
 
 header .img2 {
-  border: 5px solid rebeccapurple;
+  border: 2px solid rebeccapurple;
   border-radius: 50%;
   position: relative;
-  width: 10rem;
-  height: 10rem;
-  top: -6rem;
-  left: 5rem;
+  width: 15vw;
+  height: 15vw;
+  top: -8vw;
+  left: calc((36% / 2) - 7.5vw);
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^
+   * Relative to value of "left"
+   * property in .div--left
+   minus radius of image display*/
   z-index: 2;
 }
 

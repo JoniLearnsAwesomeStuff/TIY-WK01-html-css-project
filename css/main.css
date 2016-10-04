@@ -18,8 +18,9 @@ html {
 }
 
 body {
-  background-color: rebeccapurple;
   background-color: #f2ecf9;
+  /*Background image courtesy http://subtlepatterns.com/*/
+  background-image:url(../images/seigaiha.png);
   padding: 1.5rem;
   margin: 0;
   min-height: 100%;
@@ -72,7 +73,6 @@ body {
     bottom: 0;
     z-index: -1;
     left: 0;
-    background-color: #f2ecf9;
 }
 
 /**********************
@@ -94,7 +94,6 @@ body {
   bottom: 0;
   z-index: -1;
   left: 40%;
-  background-color: #f2ecf9;
 }
 
 /*************************************
@@ -104,11 +103,7 @@ body {
   position: relative;
   bottom: 0;
   width: 100%;
-  border: 5px solid rebeccapurple;
-  border-radius: 0 1em 0 1em;
-  background-color: #f2ecf9;
   color: rebeccapurple;
-  padding-bottom: 0.2rem;
 }
 
 /**********************
@@ -128,7 +123,7 @@ body {
 * Right side Content
 ***********************/
 .div--info {
-  /*border-top: 1px solid rebeccapurple;*/
+  /*border: 1px solid rebeccapurple;*/
   padding-top: 0;
   padding-left: .75em;
   padding-right: .75em;
@@ -155,16 +150,8 @@ body {
   width: 2em;
 }
 
-.div--hours {
-}
-
 .div--contact,
 .div--social {
-  /*border: 5px solid rebeccapurple;
-  border-radius: 0 5em 0 5em;
-  background-color: #f2ecf9;*/
-  /*width: calc(100% - calc(36% / 2) - 20%);*/
-  /*padding: 1em;*/
   margin: 0 1em 1.5em 1em;
 }
 
@@ -178,6 +165,9 @@ body {
 * Footer Content
 ***********************/
 .footer--mod p {
-  margin: 1rem auto;
+  border: 1px solid rebeccapurple;
+  border-radius: 0 1.5em 0 1.5em;
+  padding: 1.5rem;
+  margin: 2rem auto;
   text-align: center;
 }
