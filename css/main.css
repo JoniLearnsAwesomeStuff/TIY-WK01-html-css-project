@@ -26,8 +26,12 @@ body {
   min-height: 100%;
 }
 
-.h2--mod {
+h1, h2 {
+  font-family: 'Arima Madurai', cursive;
   text-align: center;
+}
+
+.h2--mod {
   margin: 1.5em 0 .5em 0;
 }
 
@@ -122,11 +126,21 @@ body {
 /**********************
 * Right side Content
 ***********************/
+.div--menu {
+  width: 100%;
+  padding: 1em;
+  margin: 1em;
+  table-layout: auto;
+}
+
+.menu:after {
+  clear: both;
+}
+
 .div--info {
-  /*border: 1px solid rebeccapurple;*/
-  padding-top: 0;
-  padding-left: .75em;
-  padding-right: .75em;
+  width: 100%;
+  padding: 0 1em;
+  margin: 1em;
 }
 
 .div--hours {
@@ -136,7 +150,7 @@ body {
 
 .div--contact {
   float: left;
-  width: 35%;
+  width: 30%;
 }
 
 .div--social {
@@ -152,7 +166,7 @@ body {
 
 .div--contact,
 .div--social {
-  margin: 0 1em 1.5em 1em;
+  margin: 0 .5em;
 }
 
 .div--hours p,

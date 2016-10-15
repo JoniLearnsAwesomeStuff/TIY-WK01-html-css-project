@@ -16,11 +16,9 @@ header .img1 {
 
 header .h1--banner {
   position: absolute;
-  font-family: 'Arima Madurai', cursive;
   color: #f2ecf9;
   font-size: 3vw;
   font-weight: bolder;
-  text-align: center;
   text-shadow: 1px 1px 2px black;
   top: 4em;
   width: 100%;
@@ -43,13 +41,11 @@ header .img2 {
 }
 
 .h1--title {
-  font-family: 'Arima Madurai', cursive;
   font-size: 5vw;
   font-weight: bolder;
   font-style: italic;
   font-variant: small-caps;
   color: rebeccapurple;
-  text-align: center;
   margin-top: -14vw;
   margin-bottom: -1vw;
   /*margin-bottom: 2.5rem;*/

@@ -1,14 +1,3 @@
-.div--menu {
-  width: 100%;
-  padding: 1em;
-  margin: 1em;
-  table-layout: auto;
-}
-
-.menu:after {
-  clear: both;
-}
-
 .table {
   display:table;
   width: 100%;
@@ -59,7 +48,6 @@ a.table-row:hover {
   background-color: aqua;
 }
 
-a.table-row:focus,
-a.table-row:active {
+a.table-row:focus {
   background-color: darkorange;
 }
